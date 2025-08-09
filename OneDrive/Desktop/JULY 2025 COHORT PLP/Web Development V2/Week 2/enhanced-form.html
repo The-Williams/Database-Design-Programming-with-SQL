@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Enhanced HTML5 Page with Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
+<style>
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
@@ -124,14 +124,17 @@
         <legend>Personal Information</legend>
 
         <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+        <input type="text" id="fullname" name="fullname" placeholder="Edger Williams" required minlength="3">
 
+        <br>
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        <input type="email" id="email" name="email" placeholder="edgeriowilliams@gmail.com" required>
 
+        <br>
         <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" placeholder="0700-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+        <input type="tel" id="phone" name="phone" placeholder="0705-810-636" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
 
+        <br>
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" min="18" max="99" required>
       </fieldset>
@@ -142,9 +145,11 @@
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required pattern="^\w{4,}$" autocomplete="off">
 
+        <br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required minlength="6">
 
+        <br>
         <label for="plan">Select Plan:</label>
         <select id="plan" name="plan" required>
           <option value="">--Select--</option>
@@ -153,12 +158,14 @@
           <option value="enterprise">Enterprise</option>
         </select>
 
+        <br>
         <label>
           <input type="checkbox" name="terms" required>
           I agree to the terms and conditions.
         </label>
       </fieldset>
 
+      <br>
       <input type="submit" value="Submit">
 
     </form>
