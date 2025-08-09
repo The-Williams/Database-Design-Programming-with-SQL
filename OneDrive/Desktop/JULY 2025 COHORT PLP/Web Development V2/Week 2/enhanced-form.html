@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced HTML5 Page with Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    section {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background-color: #eee;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label, input, select, textarea {
+      margin-bottom: 10px;
+    }
+    input[type="submit"] {
+      width: 150px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Media-Rich HTML5 Page with Form</h1>
+
+  <!-- Section 1: Lists -->
+  <section>
+    <h2>Key Features List</h2>
+    <ul>
+      <li>Responsive Layout</li>
+      <li>Media Embedding Support</li>
+      <li>HTML5 Native Validation</li>
+      <li>Accessibility with Semantic Tags</li>
+    </ul>
+  </section>
+
+  <!-- Section 2: Table -->
+  <section>
+    <h2>Pricing Comparison Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Price</th>
+          <th>Features</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic</td>
+          <td>$10/month</td>
+          <td>Email Support</td>
+        </tr>
+        <tr>
+          <td>Pro</td>
+          <td>$25/month</td>
+          <td>Priority Support, Analytics</td>
+        </tr>
+        <tr>
+          <td>Enterprise</td>
+          <td>$50/month</td>
+          <td>Dedicated Manager, API Access</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Section 3: Media -->
+  <section>
+    <h2>Embedded Media</h2>
+    <p>Listen to our latest podcast episode:</p>
+    <audio controls>
+      <source src="sample-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Watch our introduction video:</p>
+    <video width="320" height="240" controls>
+      <source src="sample-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Section 4: HTML5 Form -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form action="#" method="POST">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="0700-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Preferences</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="^\w{4,}$" autocomplete="off">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="plan">Select Plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="">--Select--</option>
+          <option value="basic">Basic</option>
+          <option value="pro">Pro</option>
+          <option value="enterprise">Enterprise</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="terms" required>
+          I agree to the terms and conditions.
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </section>
+
+</body>
+</html>
