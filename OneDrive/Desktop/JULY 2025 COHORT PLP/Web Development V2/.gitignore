@@ -1,0 +1,9 @@
+# Ignore system and OneDrive junk
+*.lnk
+*.ini
+.vscode/
+AppData/
+Desktop.ini
+*.log
+*.TMP
+.cache/
