@@ -7,3 +7,17 @@ Desktop.ini
 *.log
 *.TMP
 .cache/
+
+# Ignore system files
+*.lnk
+*.ini
+*.log
+*.TMP
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore OneDrive and AppData folders
+AppData/
+Desktop.ini
+.cache/
